@@ -61,7 +61,6 @@ class CatClassifierBoost():
 
     def err_emp(self, X, y):
         y_pred = self.predict(X)
-        erreur = np.sum(y_pred != y) / X.shape[0]
         erreur = np.mean(y_pred != y)
     
         return erreur
